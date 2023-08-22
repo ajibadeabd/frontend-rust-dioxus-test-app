@@ -66,9 +66,11 @@ name = "rust-web-demo"
 default_platform = "web"
 
 # `build` & `serve` dist path
-out_dir = "docs" 
+out_dir = "docs"
+
+# resource (public) file folder
+asset_dir = "public"
 base_path = "frontend-rust-dioxus-test-app"
-# base_path = "frontend-rust-dioxus-test-app"
 
 
 [web.app]
