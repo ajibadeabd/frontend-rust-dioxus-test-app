@@ -46,8 +46,3 @@ style = []
 
 # Javascript code file
 script = []
-
-
-base_path = "https://github.com/ajibadeabd/frontend-rust-dioxus-test-app/tree/test-app-rust"
-
-
