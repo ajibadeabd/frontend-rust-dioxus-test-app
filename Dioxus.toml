@@ -3,7 +3,8 @@
 [application]
 
 # App (Project) Name
-name = "Tailwind CSS + Dioxus"
+name = "rust-web-demo"
+
 
 # Dioxus App Default Platform
 # desktop, web, mobile, ssr
