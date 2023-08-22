@@ -163,7 +163,7 @@ let m,p,ls,d,t,op,i,e,z,metaflags;
       function truthy(val) {
         return val === "true" || val === true;
       }
-    let s = "";let lsp,sp,sl; let c = new TextDecoder();let u8buf,u8bufp;const evt = [];
+    const evt = [];
                     let evt_tmp1, evt_tmp2;
                     function get_evt() {
                         evt_tmp2 = u8buf[u8bufp++];
@@ -199,8 +199,8 @@ let m,p,ls,d,t,op,i,e,z,metaflags;
                         else{
                             return ns_cache[ns_cache_tmp2&4294967167];
                         }
-                    }let u32buf,u32bufp;
-            let event_name,bubbles,ns,id,len,field,ptr,value;
+                    }let s = "";let lsp,sp,sl; let c = new TextDecoder();let u8buf,u8bufp;let u32buf,u32bufp;
+            let ptr,bubbles,ns,len,value,event_name,field,id;
             export function create(r){
                 d=r;
             }
