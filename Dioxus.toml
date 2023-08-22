@@ -13,7 +13,7 @@ out_dir = "docs"
 
 # resource (public) file folder
 asset_dir = "public"
-base_path = "frust-web-demo"
+base_path = "rust-web-demo"
 
 
 [web.app]

@@ -4,7 +4,7 @@ use dioxus::prelude::*;
 pub fn NotFound(cx: Scope,segments: Vec<String> ) -> Element {
     render!(rsx!(
         div{
-            "not found"
+            "kord said page not found"
         }
     ))
 }
