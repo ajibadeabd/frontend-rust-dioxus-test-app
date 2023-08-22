@@ -5,19 +5,43 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-console_error_panic_hook = "0.1.7"
-dioxus = "0.4.0"
-dioxus-fullstack = "0.4.1"
-dioxus-router = "0.4.1"
-dioxus-web = "0.4.0"
-im-rc = "15.1.0"
-log = "0.4.20"
-wasm-bindgen = "0.2.87"
-wasm-logger = "0.2.0"
+# [dependencies]
+# console_error_panic_hook = "0.1.7"
+# dioxus = "0.4.0"
+# dioxus-fullstack = "0.4.1"
+# dioxus-router = "0.4.1"
+# dioxus-web = "0.4.0"
+# im-rc = "15.1.0"
+# log = "0.4.20"
+# wasm-bindgen = "0.2.87"
+# wasm-logger = "0.2.0"
 
-[package.metadata.bundle]
-# App (Project) Name
+# [package.metadata.bundle]
+# # App (Project) Name
 
-name = "rust-web-demo"
+# name = "rust-web-demo"
  
+
+
+
+[dependencies]
+dioxus-web = { workspace = true, features = ["hydrate"], optional = true }
+dioxus = { workspace = true }
+dioxus-fullstack = { workspace = true, features = ["router"] }
+dioxus-router = { workspace = true}
+tokio = { workspace = true, features = ["full"], optional = true }
+serde = "1.0.159"
+
+[features]
+default = []
+ssr = ["tokio", "dioxus-fullstack/ssr"]
+web = ["dioxus-web"]
+
+
+
+
+[workspace.dependencies.dioxus]
+[workspace.dependencies.dioxus-fullstack]
+[workspace.dependencies.dioxus-router]
+[workspace.dependencies.tokio]
+[workspace.dependencies.dioxus-web]

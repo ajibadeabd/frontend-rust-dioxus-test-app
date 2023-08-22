@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dioxus | ⛺</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="An elegant GUI library for Rust, inspired by React. Supports Web, Desktop, SSR, Liveview, and Mobile.">
+
+    <!-- <link rel="icon shortcut" type="image/png" href="/static/favicon.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/prism/prism.css" /> -->
+
+
+    <!-- Social meta stuff -->
+    <!-- open graph -->
+    <meta
+      property="og:title"
+      content="Dioxus - Reliable Rust apps that run anywhere"
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:description"
+      content="An elegant GUI library for Rust, inspired by React. Supports Web, Desktop, SSR, Liveview, and Mobile."
+    />
+
+    <meta property="og:url" content="https://dioxuslabs.com/" />
+
+    <meta
+      property="og:image"
+      content="https://dioxuslabs.com/static/opengraph.png"
+    />
+
+    <!-- twitter -->
+    <meta
+      name="twitter:title"
+      content="Dioxus - Reliable Rust apps that run anywhere"
+    />
+    <meta
+      name="twitter:description"
+      content="An elegant GUI library for Rust, inspired by React. Supports Web, Desktop, SSR, Liveview, and Mobile."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dioxuslabs.com/static/opengraph.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBE72MVZ1B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EBE72MVZ1B');
+    </script>
+
+    <!-- style stuff -->
+    <!-- <link data-trunk rel="css" href="/tailwind.css" /> -->
+    <link rel="stylesheet" href="/./tailwind.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ghmetal: "#24292f",
+              ghdarkmetal: "#161b22",
+              ideblack: "#0e1116",
+              // ideblack: "#0a0a0a",
+              // ideblack: "#0E1116",
+            },
+            fontFamily: {
+              sans: ["Lexend", "sans-serif"],
+              // sans: ["Inter var", "sans-serif"],
+            },
+            boxShadow: {
+              "3xl": "0 35px 60px -1ww5px rgba(0, 0, 0, 0.5)",
+              cutesy: "0px 0px 40px -5px rgba(255, 255, 255, 0.2)",
+              // cutesy: "0px 0px 30px -10px white",
+              // cutesy: "0px 0px 30px -10px red",
+              pop: "0px 0px 30px -10px rgba(0, 0, 0, 0.5)",
+            },
+          },
+        },
+
+        // "3xl": "0 35px 60px -1ww5px rgba(0, 0, 0, 0.5)",
+        // theme: {
+        //   extend: {
+        //     colors: {
+        //       clifford: "#da373d",
+        //     },
+        //   },
+        // },
+      };
+    </script> -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css"
+    />
+
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 10%;
+        /* padding: 45px; */
+        list-style: disc;
+      }
+      /* body {
+        font-family: 'Lexend', sans-serif;
+      } */
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          /* padding: 15px; */
+        }
+      }
+    </style>
+    <!-- <script src="/./static/darktheme.js"></script> -->
+    <!-- <link rel="stylesheet" href="tailwind.css">
+ -->
+  </head>
+
+  <body>
+    <div id="main"><div class="min-h-screen flex items-center justify-center bg-gray-100"><div class="w-full max-w-md bg-white p-6 rounded-lg shadow-md"><h2 class="text-2xl font-semibold mb-4">Login</h2><form class="space-y-4"><div class="flex flex-col"><label class="text-sm font-medium mb-1">Username</label><input class="px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" type="text" placeholder="Enter your username"/></div><div class="flex flex-col"><label class="text-sm font-medium mb-1">Password</label><input class="px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" type="password" placeholder="Enter your password"/></div><button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600" type="submit">Login</button></form></div></div><meta hidden="true" id="dioxus-storage-props" data-serialized="AQ==" /><meta hidden="true" id="dioxus-storage-data" data-serialized="AA==" /></div>
+    <!-- Note the usage of `type=module` here as this is an ES6 module -->
+    <script type="module">
+      import init from "/./assets/dioxus/Dioxus.js";
+      init("/./assets/dioxus/Dioxus_bg.wasm").then((wasm) => {
+        if (wasm.__wbindgen_start == undefined) {
+          wasm.main();
+        }
+      });
+    </script>
+    <!-- <script src="/static/prism/prism.js"></script> -->
+    <!--  -->
+  </body>
+</html>
