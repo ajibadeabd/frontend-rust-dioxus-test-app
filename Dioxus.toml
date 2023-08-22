@@ -16,7 +16,7 @@ out_dir = "dist"
 asset_dir = "public"
 
 [web.app]
-
+base_path = "frontend-rust-dioxus-test-app"
 # HTML title tag content
 title = "dioxus | ⛺"
 
@@ -49,3 +49,5 @@ script = []
 
 
 base_path = "https://github.com/ajibadeabd/frontend-rust-dioxus-test-app/tree/test-app-rust"
+
+
