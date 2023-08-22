@@ -70,7 +70,7 @@ out_dir = "dist"
 
 # resource (public) file folder
 asset_dir = "public"
-base_path = "https://github.com/ajibadeabd/frontend-rust-dioxus-test-app"
+base_path = "rontend-rust-dioxus-test-app"
 
 
 [web.app]
